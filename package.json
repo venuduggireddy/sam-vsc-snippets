@@ -1,0 +1,46 @@
+{
+  "name": "sam-vsc-snippets",
+  "version": "0.6.8",
+  "description": "SAM VS Code snipptes for rapid development ",
+  "scripts": {
+    "build": "vscode-snippet-generator",
+    "build:i18n": "vscode-snippet-generator --i18nTpl=\"{en-US}\"",
+    "build:en-US": "vscode-snippet-generator --i18n=en-US --outFile=snippets-en-US.json",
+    "release": "npm run build && vsce package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/venuduggireddy/sam-vsc-snippets.git"
+  },
+  "icon": "sam-logo.png",
+  "publisher": "duggi",
+  "license": "MIT",
+  "keywords": [
+    "vscode",
+    "vscode snippet",
+    "GSA Sam Components",
+    "SAM"
+  ],
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets-ts.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vsce": "^1.74.0",
+    "vscode-snippet-generator": "^1.1.0"
+  }
+}
