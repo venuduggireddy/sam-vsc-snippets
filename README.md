@@ -1,7 +1,5 @@
 # sam-vsc-snippets
 
-![GITHUB-BADGE](https://github.com/venuduggireddy/sam-vsc-snippets/workflows/sam-vsc-snippets/badge.svg)
-
 [GSA sam components](https://www.npmjs.com/package/@gsa-sam/components) visual studio code snippets. This extension will provide IntelliSense for sam angular components for rapid development.
 
 ## Usage

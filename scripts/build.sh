@@ -48,11 +48,12 @@ updateReadme(){
    echo "Generate docs..."
    rm -rf ./docs
    mkdir -p ./docs
-
-   node ./scripts/table.js
+   npx ./scripts/table.js
+   npx embedme README.md
 }
 
 buildSnippet
 buildClass
-packing
 updateReadme
+packing
+

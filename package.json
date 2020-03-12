@@ -2,12 +2,16 @@
   "name": "sam-vsc-snippets",
   "displayName": "GSA SAM VSC Snippets",
   "version": "0.6.8",
-  "description": "Snippets based on GSA SAM NG components",
+  "description": "Snippets for GSA SAM NG components",
+  "author": {
+    "name": "Venu Duggireddy",
+    "url": "https://github.com/venuduggireddy"
+  },
   "scripts": {
     "build1": "vscode-snippet-generator",
     "build:i18n": "vscode-snippet-generator --i18nTpl=\"{en-US}\"",
     "build:en-US": "vscode-snippet-generator --i18n=en-US --outFile=snippets-en-US.json",
-    "release": "npm run build && npm run docs",
+    "release": "npm run build",
     "build": "bash ./scripts/build.sh --i18nTpl=\"{en-US}\"",
     "docs": "embedme README.md"
   },
@@ -15,8 +19,8 @@
     "type": "git",
     "url": "https://github.com/venuduggireddy/sam-vsc-snippets.git"
   },
-  "icon": "sam-logo.png",
-  "publisher": "duggi",
+  "icon": "sam-vsc-logo.png",
+  "publisher": "psrp",
   "license": "MIT",
   "keywords": [
     "vscode",

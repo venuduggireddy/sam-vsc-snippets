@@ -20,7 +20,7 @@ writeFile(docs + "ts.md", tsmd);
 function writeFile(file, data) {
   fs.writeFile(file, data, function(err) {
     if (err) throw err;
-    console.log("Saved!" + file);
+    // console.log("Saved!" + file);
   });
 }
 
