@@ -1,14 +1,12 @@
 ---
-prefix: actions-menu
-description:
-  en-US: actions-menu
-scope: typescript,html
+description: Create actions menu with options for size `defult` or `sm`. Default size is sm.
+scope: html
 ---
 
 ```html
 <sds-actions-menu
   size="${1|sm|}"
   [model]="${2|menu|}"
-  (clicks)="${2|event|}"
+  (clicks)="${3|event|}"
 ></sds-actions-menu>
 ```

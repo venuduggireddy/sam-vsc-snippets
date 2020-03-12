@@ -1,7 +1,5 @@
 ---
-prefix: header
-description:
-  en-US: header
+description: Header layout component
 scope: html
 ---
 

@@ -1,7 +1,5 @@
 ---
-prefix: pagination
-description:
-  en-US: pagination
+description: Pagination with top and bottom options
 scope: html
 ---
 

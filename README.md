@@ -9,27 +9,40 @@ Typing the beginning of `sam-` will automatically appear in the intellisense lis
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to activate snippets from within the editor.
 
 ### HTML Snippets
-All HTML snippets starts with `sam-component-`
- | Snippet | Purpose |
-|--|--|
-| `collapse` | create collapse component |
-| `actions-menu` | create actions menu with options for `sm` and `lg` |
-| `icon` | create icon tag  with options `bell,calendar,book`  |
-| `header`| create header layout |
-| `footer`| create footer layout |
-| `subheader`| create subheader layout |
-| `pagination`| create pagination layout |
-| `filters`| create filters layout |
-||
+All HTML snippets starts with `sam-`
+
+This table is generated druing build
+
+```md
+<!-- docs/html.md -->
+
+| Prefix           | Description                                                                                                      |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------- |
+| sam-actions-menu | Create actions menu with options for size `defult` or `sm`. Default size is sm.                                  |
+| sam-button       | Button with circular icons                                                                                       |
+| sam-collapse     | Collapse component with show hide content                                                                        |
+| sam-filters      | Sds Formly filters                                                                                               |
+| sam-header       | Header layout component                                                                                          |
+| sam-icon         | icon tag  with options for `bell,calendar,book`                                                                  |
+| sam-pagination   | Pagination with top and bottom options                                                                           |
+| sam-subheader    | Subheader with all otions backbutton, title, primary/secondry buttons, search, action buttons and drawer content |
+
+```
 
 ### Typescript
-All typescript snippets starts with `sam-ts-`
- | Snippet | Purpose |
-|--|--|
-| `formly-input` | create formly config object with input type |
-| `formly-accordion` | create formly config object with accordion type |
-| `formly-options` | create formly config object with select input type |
+All typescript snippets starts with `sam-`
 
+This table is generated druing build
+
+```md
+<!-- docs/ts.md -->
+
+| Prefix           | Description       |
+| ---------------- | ----------------- |
+| sam-action-menu  | Action items menu |
+| sam-formly-input | SF                |
+
+```
 ### Quick start
 
 ```sh

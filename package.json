@@ -1,12 +1,15 @@
 {
   "name": "sam-vsc-snippets",
+  "displayName": "GSA SAM VSC Snippets",
   "version": "0.6.8",
-  "description": "SAM VS Code snipptes for rapid development ",
+  "description": "Snippets based on GSA SAM NG components",
   "scripts": {
-    "build": "vscode-snippet-generator",
+    "build1": "vscode-snippet-generator",
     "build:i18n": "vscode-snippet-generator --i18nTpl=\"{en-US}\"",
     "build:en-US": "vscode-snippet-generator --i18n=en-US --outFile=snippets-en-US.json",
-    "release": "npm run build && vsce package"
+    "release": "npm run build && npm run docs",
+    "build": "bash ./scripts/build.sh --i18nTpl=\"{en-US}\"",
+    "docs": "embedme README.md"
   },
   "repository": {
     "type": "git",
@@ -31,7 +34,7 @@
     "snippets": [
       {
         "language": "html",
-        "path": "./snippets.json"
+        "path": "./snippets-html.json"
       },
       {
         "language": "typescript",
@@ -40,7 +43,15 @@
     ]
   },
   "devDependencies": {
+    "@types/less": "^3.0.0",
+    "@types/node": "^10.12.2",
+    "@types/verror": "^1.10.3",
+    "embedme": "^1.20.0",
+    "tablemark": "^2.0.0",
+    "typescript": "^3.1.6",
     "vsce": "^1.74.0",
+    "vscode": "^1.1.21",
     "vscode-snippet-generator": "^1.1.0"
-  }
+  },
+  "dependencies": {}
 }

@@ -1,7 +1,5 @@
 ---
-prefix: subheader
-description:
-  en-US: subheader
+description: Subheader with all otions backbutton, title, primary/secondry buttons, search, action buttons and drawer content
 scope: html
 ---
 

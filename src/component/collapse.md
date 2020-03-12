@@ -1,7 +1,5 @@
 ---
-prefix: collapse
-description:
-  en-US: collapse
+description: Collapse component with show hide content
 scope: html
 ---
 
