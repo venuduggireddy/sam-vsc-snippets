@@ -1,5 +1,5 @@
 ---
-description: Create actions menu with options for size `defult` or `sm`. Default size is sm.
+description: Create actions menu with options for size `default` or `sm`. Default size is sm.
 scope: html
 ---
 
