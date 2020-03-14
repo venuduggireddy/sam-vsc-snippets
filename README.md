@@ -1,6 +1,9 @@
 # sam-vsc-snippets
 
-![sam-vsc-snippets](https://img.shields.io/github/workflow/status/venuduggireddy/sam-vsc-snippets/CI?style=for-the-badge)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/venuduggireddy/sam-vsc-snippets/CI)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/venuduggireddy/sam-vsc-snippets)
+![GitHub repo size](https://img.shields.io/github/repo-size/venuduggireddy/sam-vsc-snippets)
+![GitHub](https://img.shields.io/github/license/venuduggireddy/sam-vsc-snippets)
 
 [GSA sam components](https://www.npmjs.com/package/@gsa-sam/components) visual studio code snippets. This extension will provide IntelliSense for sam angular components for rapid development.
 
