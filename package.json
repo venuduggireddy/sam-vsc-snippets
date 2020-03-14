@@ -26,7 +26,8 @@
     "vscode",
     "vscode snippet",
     "GSA Sam Components",
-    "SAM"
+    "SAM",
+    "SAM dev tools"
   ],
   "engines": {
     "vscode": "^1.0.0"

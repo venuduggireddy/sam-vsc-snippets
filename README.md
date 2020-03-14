@@ -1,5 +1,7 @@
 # sam-vsc-snippets
 
+![sam-vsc-snippets](https://img.shields.io/github/workflow/status/venuduggireddy/sam-vsc-snippets/CI?style=for-the-badge)
+
 [GSA sam components](https://www.npmjs.com/package/@gsa-sam/components) visual studio code snippets. This extension will provide IntelliSense for sam angular components for rapid development.
 
 ## Usage
@@ -18,7 +20,7 @@ This table is generated druing build
 
 | Prefix           | Description                                                                                                      |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------- |
-| sam-actions-menu | Create actions menu with options for size `defult` or `sm`. Default size is sm.                                  |
+| sam-actions-menu | Create actions menu with options for size `default` or `sm`. Default size is sm.                                 |
 | sam-button       | Button with circular icons                                                                                       |
 | sam-collapse     | Collapse component with show hide content                                                                        |
 | sam-filters      | Sds Formly filters                                                                                               |
@@ -37,10 +39,11 @@ This table is generated druing build
 ```md
 <!-- docs/ts.md -->
 
-| Prefix           | Description       |
-| ---------------- | ----------------- |
-| sam-action-menu  | Action items menu |
-| sam-formly-input | SF                |
+| Prefix           | Description           |
+| ---------------- | --------------------- |
+| sam-action-menu  | Action items menu     |
+| sam-formly-input | SF                    |
+| sam-page         | Pagination page model |
 
 ```
 ### Quick start
