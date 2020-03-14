@@ -61,3 +61,8 @@ $ npm run build
 $ # package vscode extension
 $ npm run release
 ```
+
+### License
+
+The [MIT License](LICENSE)
+
