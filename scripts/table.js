@@ -1,38 +1,42 @@
 const fs = require("fs");
 const path = require("path");
 const tablemark = require("tablemark");
-
-const html = getJson(path.join(__dirname, "../snippets/html.json"));
-const ts = getJson(path.join(__dirname, "../snippets/ts.json"));
-const scss = getJson(path.join(__dirname, "../snippets/scss.json"));
+const glob = require("glob");
 
 const docs = path.join(__dirname, "../docs/");
 
-const htmlmd = tablemark(getTableArray(html));
-const tsmd = tablemark(getTableArray(ts));
-const scssmd = tablemark(getTableArray(scss));
-const start= `
-  <!-- HTML_TABLE_START -->
-  ${htmlmd}
-  <!-- HTML_TABLE_END -->
-`
+glob(path.join(__dirname, "../snippets/") + "*.json", function(err, files) {
+  if (err) throw err;
 
-writeFile(docs + "html.md", htmlmd);
-writeFile(docs + "ts.md", tsmd);
-writeFile(docs + "scss.md", scssmd);
+  files.forEach(function(file) {
+    if (err) throw err;
+
+    const fileName = path.parse(file).name;
+    const jsonData = getJson(file);
+    const tableMd = tablemark(getTableArray(jsonData));
+    writeFile(docs+fileName+".md", tableMd);
+  });
+});
 
 
-function readFile(filename, data){
-   fs.readFile(filename, 'utf8', function (err,data){
+// const start = `
+//   <!-- HTML_TABLE_START -->
+//   ${htmlmd}
+//   <!-- HTML_TABLE_END -->
+// `;
+
+
+function readFile(filename, data) {
+  fs.readFile(filename, "utf8", function(err, data) {
     if (err) {
       return console.log(err);
     }
-   });
+  });
 }
 /**
  * generate markdown table file for each snippet type
- * @param {*} file 
- * @param {*} data 
+ * @param {*} file
+ * @param {*} data
  */
 function writeFile(file, data) {
   fs.writeFile(file, data, function(err) {
@@ -43,7 +47,7 @@ function writeFile(file, data) {
 
 /**
  * Read file from the path and covert it to JSON object
- * @param {*} filePath 
+ * @param {*} filePath
  */
 function getJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath).toString("utf8"));
@@ -51,7 +55,7 @@ function getJson(filePath) {
 
 /**
  * Reduce prefix and description to array
- * @param {*} snippet 
+ * @param {*} snippet
  */
 function getTableArray(snippet) {
   return Object.keys(snippet).reduce((acc, key) => {
