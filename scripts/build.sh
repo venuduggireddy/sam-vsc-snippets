@@ -39,7 +39,8 @@ packingByLang() {
     cp snippets/html.json ./snippets-html.json
     cp snippets/ts.json ./snippets-ts.json
     cp snippets/scss.json ./snippets-scss.json
-    $(npm bin)/vsce package -o sam-vsc-snippets.vsix
+    local VERSION=$(node -p "require('./package.json').version")
+    $(npm bin)/vsce package -o sam-vsc-snippets-${VERSION}.vsix
   )
 }
 
