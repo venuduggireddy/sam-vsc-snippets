@@ -5,6 +5,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/venuduggireddy/sam-vsc-snippets)
 ![GitHub](https://img.shields.io/github/license/venuduggireddy/sam-vsc-snippets)
 
+
 [GSA sam components](https://www.npmjs.com/package/@gsa-sam/components) visual studio code snippets. This extension will provide IntelliSense for sam angular components for rapid development.
 
 ## Usage
@@ -16,7 +17,7 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 ### HTML Snippets
 All HTML snippets starts with `sam-`
 
-This table is generated druing build
+This table is generated during build
 
 ```md
 <!-- docs/html.md -->
@@ -37,7 +38,7 @@ This table is generated druing build
 ### Typescript
 All typescript snippets starts with `sam-`
 
-This table is generated druing build
+This table is generated during build
 
 ```md
 <!-- docs/ts.md -->
@@ -49,6 +50,22 @@ This table is generated druing build
 | sam-page         | Pagination page model |
 
 ```
+
+### SCSS
+
+All SCSS snippets starts with `sam-`
+
+This table is generated during build
+
+```md
+<!-- docs/scss.md -->
+
+| Prefix          | Description                                                               |
+| --------------- | ------------------------------------------------------------------------- |
+| sam-import-scss | Import sam-styles and set the image and font paths for the default themes |
+
+```
+
 ### Quick start
 
 ```sh

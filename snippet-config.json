@@ -1,7 +1,0 @@
-{
-    "$schema": "./node_modules/vscode-snippet-generator/schema.json",
-    "sourceRoot": "src",
-    "prefix": "sam",
-    "separator": "-",
-    "i18n": "en-US"
-}

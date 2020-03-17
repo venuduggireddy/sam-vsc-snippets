@@ -10,9 +10,11 @@ buildSnippetByLang() {
     local filePrefix="-${LANG}"
     local i18nTpl=""
     # html
-    $(npm bin)/vscode-snippet-generator --prefix=sam --i18n=${LANG} --sourceRoot=src/component --outFile=snippets/html${filePrefix}.json --i18nTpl=${i18nTpl}
+    $(npm bin)/vscode-snippet-generator --prefix=sam --i18n=${LANG} --sourceRoot=src/component --outFile=snippets/html.json --i18nTpl=${i18nTpl}
     # ts
-    $(npm bin)/vscode-snippet-generator --prefix=sam --i18n=${LANG} --sourceRoot=src/ts --outFile=snippets/ts${filePrefix}.json --i18nTpl=${i18nTpl}
+    $(npm bin)/vscode-snippet-generator --prefix=sam --i18n=${LANG} --sourceRoot=src/ts --outFile=snippets/ts.json --i18nTpl=${i18nTpl}
+    #scss
+    $(npm bin)/vscode-snippet-generator --prefix=sam --i18n=${LANG} --sourceRoot=src/scss --outFile=snippets/scss.json --i18nTpl=${i18nTpl}
   )
 }
 
@@ -34,8 +36,9 @@ packingByLang() {
   (
     local prefix="-${LANG}"
     echo "Packing version: ${LANG}"
-    cp snippets/html${prefix}.json ./snippets-html.json
-    cp snippets/ts${prefix}.json ./snippets-ts.json
+    cp snippets/html.json ./snippets-html.json
+    cp snippets/ts.json ./snippets-ts.json
+    cp snippets/scss.json ./snippets-scss.json
     $(npm bin)/vsce package -o sam-vsc-snippets.vsix
   )
 }

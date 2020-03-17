@@ -2,16 +2,33 @@ const fs = require("fs");
 const path = require("path");
 const tablemark = require("tablemark");
 
-const html = getJson(path.join(__dirname, "../snippets-html.json"));
-const ts = getJson(path.join(__dirname, "../snippets-ts.json"));
+const html = getJson(path.join(__dirname, "../snippets/html.json"));
+const ts = getJson(path.join(__dirname, "../snippets/ts.json"));
+const scss = getJson(path.join(__dirname, "../snippets/scss.json"));
+
 const docs = path.join(__dirname, "../docs/");
 
 const htmlmd = tablemark(getTableArray(html));
 const tsmd = tablemark(getTableArray(ts));
+const scssmd = tablemark(getTableArray(scss));
+const start= `
+  <!-- HTML_TABLE_START -->
+  ${htmlmd}
+  <!-- HTML_TABLE_END -->
+`
 
 writeFile(docs + "html.md", htmlmd);
 writeFile(docs + "ts.md", tsmd);
+writeFile(docs + "scss.md", scssmd);
 
+
+function readFile(filename, data){
+   fs.readFile(filename, 'utf8', function (err,data){
+    if (err) {
+      return console.log(err);
+    }
+   });
+}
 /**
  * generate markdown table file for each snippet type
  * @param {*} file 
