@@ -5,4 +5,4 @@ package-lock.json
 snippets*.json
 .vscode
 /snippets
-/docs
+#/docs
