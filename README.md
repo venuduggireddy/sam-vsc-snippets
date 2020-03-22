@@ -22,16 +22,18 @@ This table is generated during build
 ```md
 <!-- docs/html.md -->
 
-| Prefix           | Description                                                                                                      |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------- |
-| sam-actions-menu | Create actions menu with options for size `default` or `sm`. Default size is sm.                                 |
-| sam-button       | Button with circular icons                                                                                       |
-| sam-collapse     | Collapse component with show hide content                                                                        |
-| sam-filters      | Sds Formly filters                                                                                               |
-| sam-header       | Header layout component                                                                                          |
-| sam-icon         | icon tag  with options for `bell,calendar,book`                                                                  |
-| sam-pagination   | Pagination with top and bottom options                                                                           |
-| sam-subheader    | Subheader with all otions backbutton, title, primary/secondry buttons, search, action buttons and drawer content |
+| Prefix              | Description                                                                                                                 |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| sam-actions-menu    | Create actions menu with options for size `default` or `sm`. Default size is sm.                                            |
+| sam-button          | Button with circular icons                                                                                                  |
+| sam-collapse        | Collapse component with show hide content                                                                                   |
+| sam-filters         | Sds Formly filters                                                                                                          |
+| sam-header          | Header layout component                                                                                                     |
+| sam-icon            | icon tag  with options for `bell,calendar,book`                                                                             |
+| sam-pagination      | Pagination with top and bottom options                                                                                      |
+| sam-side-navigation | Side toolbar navigation                                                                                                     |
+| sam-side-toolbar    | Side toolbar is designed to be able to accommodate different types of content including navigation and filtering components |
+| sam-subheader       | Subheader with all options back-button, title, primary/secondary buttons, search, and actions menu buttons                  |
 
 ```
 
@@ -43,11 +45,12 @@ This table is generated during build
 ```md
 <!-- docs/ts.md -->
 
-| Prefix           | Description           |
-| ---------------- | --------------------- |
-| sam-action-menu  | Action items menu     |
-| sam-formly-input | SF                    |
-| sam-page         | Pagination page model |
+| Prefix                     | Description                             |
+| -------------------------- | --------------------------------------- |
+| sam-action-menu            | Action items menu                       |
+| sam-formly-input           | SF                                      |
+| sam-page                   | Pagination page model                   |
+| sam-side-nav-model-config  | Side navigation model config typescript |
 
 ```
 
