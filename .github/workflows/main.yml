@@ -25,9 +25,17 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run npm install
       run: npm i
-
+ 
     # Runs a set of commands using the runners shell
     - name: Run build package
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+
+       # VS code extention
+    - name: GitHub Action for vsce
+    - uses: lannonbr/vsce-action@2.0.0
+      with:
+          args: "publish -p $VSCE_TOKEN"
+        env:
+          VSCE_TOKEN: ${{ secrets.SAM_VSC_SNIPPETS }}
