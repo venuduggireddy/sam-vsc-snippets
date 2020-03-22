@@ -36,6 +36,6 @@ jobs:
     - name: GitHub Action for vsce
     - uses: lannonbr/vsce-action@2.0.0
       with:
-          args: "publish -p $VSCE_TOKEN"
-        env:
-          VSCE_TOKEN: ${{ secrets.SAM_VSC_SNIPPETS }}
+        args: "publish -p $VSCE_TOKEN"
+      env:
+        VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
